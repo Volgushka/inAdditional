@@ -14,4 +14,8 @@ public class RAM {
         return ramWeight;
     }
 
+    public String toStringRAM(){
+        return "Информация об оперативной памяти| " + "Тип:"+ " " + ramType + "; " + "Объем (Гб):"+ " "+ ramVolume + "; "  + "Вес ОП:"+ " "+ ramWeight;
+    }
+
 }

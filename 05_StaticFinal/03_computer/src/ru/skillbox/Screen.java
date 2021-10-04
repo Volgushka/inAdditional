@@ -14,6 +14,9 @@ public class Screen {
         return screenWeight;
     }
 
-    Screen screen1 = new Screen(17, ScreenType.IPS,8);
+    public String toStringScreen(){
+        return "Информация об экране| " + "Диагональ(дюйм):"+ " " + diagonal + "; " + "Тип экрана:"+ " "+ screenType + ";" + " Вес экрана:"+ " "+ screenWeight;
+    }
+
 
 }

@@ -15,4 +15,9 @@ public class Keyboard {
     }
 
 
+    public String toStringKB(){
+        return "Информация о клавиатуре| " + "Тип клавиатура:"+ " " + kbType + "; " + "Наличие подсветки:"+ " "+ hasBacklight + "; "  + "Вес клавиатуры:"+ " "+ kbWeight;
+    }
+
+
 }

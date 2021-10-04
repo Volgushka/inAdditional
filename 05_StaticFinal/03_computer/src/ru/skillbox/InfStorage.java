@@ -15,5 +15,8 @@ public class InfStorage {
         return storageWeight;
     }
 
-    InfStorage is1 = new InfStorage(StorageType.HDD, 500,2);
+    public String toStringIS(){
+        return "Информация о накопителе| " + "Тип накопителя:"+ " " + storageType + "; " + "Объем диска (ГБ):"+ " "+ storageSpace + ";" + "Вес накопителя:"+ " "+ storageWeight;
+    }
+
 }

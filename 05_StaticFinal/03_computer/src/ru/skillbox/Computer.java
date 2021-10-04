@@ -76,7 +76,7 @@ public class Computer {
 
     @Override
     public String toString(){
-        return name + " " + vendor + " " + cpu + " " + ram + " " + information_storage + screen + " " + keyboard + " ";
+        return "Компьютер" + " "+name + " " + vendor+ "\r\n" + cpu.toStringCPU() + "\r\n" + ram.toStringRAM() + "\r\n"  + information_storage.toStringIS() + "\r\n"+ screen.toStringScreen() + "\r\n"  + keyboard.toStringKB();
     }
 
 

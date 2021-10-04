@@ -12,9 +12,10 @@ public class Main {
                 new Computer("IBM", "2020", cpu1, ram1, is1, screen1, keyboard1);
 
 
-        System.out.println("firstComp");
+        System.out.println("Компания 'My first Computer'");
         System.out.println(firstComp.toString());
-        System.out.println(firstComp.getSummWeight());
+        System.out.println("Общий вес компьютера: "+ firstComp.getSummWeight()+" кг.");
+
     }
 }
 

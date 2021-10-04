@@ -17,4 +17,8 @@ public class CPU {
         return cpuWeight;
     }
 
+    public String toStringCPU(){
+        return "Информация о процессоре| " + "Частота:"+ " " + cpu_frequency + "; " + "Количество ядер:"+ " "+ numberOfCores + "; " + "Производитель:"+ " "+ cpuVender + "; " + "Вес процессора:"+ " "+ cpuWeight;
+    }
+
 }
