@@ -1,12 +1,42 @@
 public class Main {
+
+
+    public static void ABC() {
+        for (char letter = 'А'; letter <= 'Е'; letter++) {
+            int NL = letter;
+            System.out.println(NL + " - Это заглавная буква " + letter);
+        }
+
+        int i = 'Ё';
+        System.out.println(i + " - Это заглавная буква " + "Ё");
+
+        for (char letter = 'Ж'; letter <= 'Я'; letter++) {
+            int NL = letter;
+            System.out.println(NL + " - Это заглавная буква " + letter);
+        }
+
+        for (char letter = 'а'; letter <= 'е'; letter++) {
+            int NL = letter;
+            System.out.println(NL + " - Это строчная буква " + letter);
+        }
+
+        int y = 'ё';
+        System.out.println(y + " - Это строчная буква " + "ё");
+
+        for (char letter = 'ж'; letter <= 'я'; letter++) {
+            int NL = letter;
+            System.out.println(NL + " - Это строчная буква " + letter);
+        }
+    }
     public static void main(String[] args) {
         Container container = new Container();
         container.addCount(5672);
         System.out.println(container.getCount());
+        System.out.println();
+        System.out.println("Алфавит");
+        System.out.println();
 
-        // TODO: ниже напишите код для выполнения задания:
-        //  С помощью цикла и преобразования чисел в символы найдите все коды
-        //  букв русского алфавита — заглавных и строчных, в том числе буквы Ё.
-
+        Main.ABC();
     }
+
 }
