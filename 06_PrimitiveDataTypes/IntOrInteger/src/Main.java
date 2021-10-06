@@ -1,7 +1,17 @@
 public class Main {
 
+    public static void main(String[] args) {
+        Container container = new Container();
+        container.addCount(5672);
+        System.out.println(container.getCount());
+        System.out.println();
+        System.out.println("Алфавит");
+        System.out.println();
 
-    public static void ABC() {
+        Main.alphabet();
+    }
+
+    public static void alphabet() {
         for (char letter = 'А'; letter <= 'Е'; letter++) {
             int NL = letter;
             System.out.println(NL + " - Это заглавная буква " + letter);
@@ -27,16 +37,6 @@ public class Main {
             int NL = letter;
             System.out.println(NL + " - Это строчная буква " + letter);
         }
-    }
-    public static void main(String[] args) {
-        Container container = new Container();
-        container.addCount(5672);
-        System.out.println(container.getCount());
-        System.out.println();
-        System.out.println("Алфавит");
-        System.out.println();
-
-        Main.ABC();
     }
 
 }
