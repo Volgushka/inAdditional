@@ -13,29 +13,25 @@ public class Main {
 
     public static void alphabet() {
         for (char letter = 'А'; letter <= 'Е'; letter++) {
-            int NL = letter;
-            System.out.println(NL + " - Это заглавная буква " + letter);
+            System.out.println((int)letter + " - Это заглавная буква " + letter);
         }
 
         int i = 'Ё';
         System.out.println(i + " - Это заглавная буква " + "Ё");
 
         for (char letter = 'Ж'; letter <= 'Я'; letter++) {
-            int NL = letter;
-            System.out.println(NL + " - Это заглавная буква " + letter);
+            System.out.println((int)letter + " - Это заглавная буква " + letter);
         }
 
         for (char letter = 'а'; letter <= 'е'; letter++) {
-            int NL = letter;
-            System.out.println(NL + " - Это строчная буква " + letter);
+            System.out.println((int)letter + " - Это строчная буква " + letter);
         }
 
         int y = 'ё';
         System.out.println(y + " - Это строчная буква " + "ё");
 
         for (char letter = 'ж'; letter <= 'я'; letter++) {
-            int NL = letter;
-            System.out.println(NL + " - Это строчная буква " + letter);
+            System.out.println((int)letter + " - Это строчная буква " + letter);
         }
     }
 
