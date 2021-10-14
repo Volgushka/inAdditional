@@ -18,19 +18,24 @@ public class Main {
         int notfullTrucks = (fullContainers + notfullContainers) % 12 > 0 ? 1 : 0;
         int totalTrucks = fullTrucks + notfullTrucks;
 
+        if(boxesInt == 0){
+
+            System.out.println("Необходимо:" + System.lineSeparator() + "грузовиков - " + 0 + " шт."
+                    + System.lineSeparator() + "контейнеров - " + 0 + " шт.");
+        }
         int countContainers = 0;
         int countBoxes = 0;
 
             for (int t = 1; t <= totalTrucks; t++) {
                 System.out.println("Грузовик: " + t);
-                for (int i = 0; i <= 12; i++) {
+                for (int i = 1; i <= 12; i++) {
                     countContainers += 1;
-                    System.out.println("\t" + "Контейнер: " + countContainers);
-                    for (int y = 0; y <= 26; y++) {
+                    System.out.println("\tКонтейнер: " + countContainers);
+                    for (int y = 1; y <= 27; y++) {
                         countBoxes += 1;
-                        System.out.println("\t\t" + "Ящик: " + countBoxes);
+                        System.out.println("\t\tЯщик: " + countBoxes);
                         if(countBoxes >= boxesInt){
-                            System.out.println("Необходимо: " + System.lineSeparator() + "грузовиков - " + totalTrucks + " шт."
+                            System.out.println("Необходимо:" + System.lineSeparator() + "грузовиков - " + totalTrucks + " шт."
                                     + System.lineSeparator() + "контейнеров - " + totalContainers + " шт.");
                             return;
                         }

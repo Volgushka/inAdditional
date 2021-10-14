@@ -77,7 +77,7 @@ public class TestTrucksContainersAndBoxes {
                 collectTestInput("0"),
                 collectTestOutput("Необходимо:",
                         "грузовиков - 0 шт.",
-                        "контейнеров - 0 шт."));
+                    "контейнеров - 0 шт."));
     }
 
     @Test
