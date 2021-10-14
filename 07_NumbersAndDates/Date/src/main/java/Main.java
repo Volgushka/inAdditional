@@ -22,19 +22,21 @@ public class Main {
         LocalDate today = LocalDate.now();
         LocalDate birthday = LocalDate.of(year, month, day);
 
-          long age = ChronoUnit.YEARS.between(birthday, today);
- //       long age = today.until(birthday, ChronoUnit.YEARS);
-          String result = "";
+        long age = ChronoUnit.YEARS.between(birthday, today);
+        //       long age = today.until(birthday, ChronoUnit.YEARS);
+        String result = "";
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("EEE", Locale.US);
 
-
-        for (int y = 0; y < age+1; y++) {
-            LocalDate birthdayNextYear = birthday.plusYears(y);
-            result += y + " - " + formatter.format(birthdayNextYear) + " - " + formatter2.format(birthdayNextYear.getDayOfWeek())+System.lineSeparator();
+        if (today.isAfter(birthday) || today.isEqual(birthday)) {
+            for (int y = 0; y < age + 1; y++) {
+                LocalDate birthdayNextYear = birthday.plusYears(y);
+                result += y + " - " + formatter.format(birthdayNextYear) + " - " + formatter2.format(birthdayNextYear.getDayOfWeek()) + System.lineSeparator();
+            }
         }
-        return result;
+            return result;
+        }
     }
-}
+
 

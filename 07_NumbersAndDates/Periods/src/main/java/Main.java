@@ -16,7 +16,7 @@ public class Main {
     LocalDate nowDay = LocalDate.now();
     long years = ChronoUnit.YEARS.between(javaBirthday, nowDay);
     long monthes = ChronoUnit.MONTHS.between(javaBirthday, nowDay)%12;
-    LocalDate midtermData = LocalDate.of(1995, 05, 23);
+    LocalDate midtermData = javaBirthday.plusYears(years).plusMonths(monthes);
     long days = ChronoUnit.DAYS.between(midtermData, nowDay);
 
     return years + " years"+ ", " +  monthes + " months"+ ", " + days  + " days";
