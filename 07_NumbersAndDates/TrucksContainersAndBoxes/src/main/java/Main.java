@@ -9,13 +9,15 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String boxes = scanner.nextLine();
         int boxesInt = Integer.parseInt(boxes);
+        int boxesInContainer = 27;
+        int containerInTruck = 12;
 
-        int fullContainers = boxesInt / 27;
-        int notfullContainers = (boxesInt % 27 > 0) ? 1 : 0;
+        int fullContainers = boxesInt / boxesInContainer;
+        int notfullContainers = (boxesInt % boxesInContainer > 0) ? 1 : 0;
         int totalContainers = fullContainers + notfullContainers;
 
-        int fullTrucks = (fullContainers + notfullContainers) / 12;
-        int notfullTrucks = (fullContainers + notfullContainers) % 12 > 0 ? 1 : 0;
+        int fullTrucks = (fullContainers + notfullContainers) / containerInTruck;
+        int notfullTrucks = (fullContainers + notfullContainers) % containerInTruck > 0 ? 1 : 0;
         int totalTrucks = fullTrucks + notfullTrucks;
 
         if(boxesInt == 0){
