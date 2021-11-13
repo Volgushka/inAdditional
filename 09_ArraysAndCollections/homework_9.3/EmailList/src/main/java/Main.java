@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static final String WRONG_EMAIL_ANSWER = "Неверный формат email";
+    private static EmailList mail = new EmailList();
     
     /* TODO:
         Пример вывода списка Email, после ввода команды LIST в консоль:
@@ -23,11 +24,15 @@ public class Main {
         while (true) {
             String input = scanner.nextLine();
             if (input.equals("0")) {
-                break;
+                break;}
+            else if(input.equals("LIST"))
+            {mail.getSortedEmails();}
+            else {
+                String[] inputList = input.split(" ");
+                mail.add(inputList[1]);
+                }
             }
-            
             //TODO: write code here
             
         }
     }
-}
